@@ -1,0 +1,9 @@
+.next/
+node_modules/
+.qa/
+*.log
+.DS_Store
+.env*
+.qa2
+.qa3
+design
