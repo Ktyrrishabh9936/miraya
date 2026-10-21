@@ -36,7 +36,7 @@ export async function POST(request: Request) {
     interest: clean(body.interest, 100),
     message: clean(body.message, 1000),
     submittedAt: new Date().toISOString(),
-    source: "Miraya website",
+    source: "Mirayaa website",
   };
 
   if (!appointment.name || !appointment.phone || !appointment.date) {

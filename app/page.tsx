@@ -28,14 +28,14 @@ function Icon({ name, size = 20 }: { name: IconName; size?: number }) {
 
 function Brand({ compact = false, light = false }: { compact?: boolean; light?: boolean }) {
   return (
-    <a className={`brand ${compact ? "brand--compact" : ""} ${light ? "brand--light" : ""}`} href="#top" aria-label="Miraya home">
+    <a className={`brand ${compact ? "brand--compact" : ""} ${light ? "brand--light" : ""}`} href="#top" aria-label="Mirayaa home">
       <Image
         className={compact ? "brand__image brand__image--mark" : "brand__image brand__image--lockup"}
-        src={compact ? "/brand/miraya-monogram.png" : "/brand/miraya-lockup.png"}
+        src={compact ? "/brand/mirayaa-monogram.png" : "/brand/mirayaa-full-logo.png"}
         alt=""
-        width={compact ? 160 : 360}
-        height={compact ? 160 : 120}
-        sizes={compact ? "80px" : "240px"}
+        width={compact ? 705 : 2248}
+        height={compact ? 765 : 1271}
+        sizes={compact ? "112px" : "(max-width: 560px) 150px, 230px"}
       />
     </a>
   );
@@ -70,7 +70,7 @@ const heroSlides = [
     accent: "Radiance",
     lede: "Exquisite Indian fine jewellery, where enduring craftsmanship meets contemporary elegance.",
     image: "/jewellery/hero.jpg",
-    alt: "Gold necklace and earrings from the Miraya heirloom collection",
+    alt: "Gold necklace and earrings from the Mirayaa heirloom collection",
     label: "Heirloom Gold",
   },
   {
@@ -79,7 +79,7 @@ const heroSlides = [
     accent: "Yours",
     lede: "Contemporary diamond pieces with a quiet brilliance, thoughtfully composed for every chapter.",
     image: "/jewellery/bridal.jpg",
-    alt: "Diamond bangles from the Miraya signature collection",
+    alt: "Diamond bangles from the Mirayaa signature collection",
     label: "Diamond Edit",
   },
   {
@@ -144,13 +144,13 @@ function AppointmentModal({ open, onClose }: { open: boolean; onClose: () => voi
             <span className="success__gem">✦</span>
             <p className="eyebrow">Request received</p>
             <h2 id="appointment-title">Your private viewing awaits.</h2>
-            <p>Thank you. A Miraya jewellery advisor will contact you to confirm your preferred time.</p>
+            <p>Thank you. A Mirayaa jewellery advisor will contact you to confirm your preferred time.</p>
             <button className="button button--dark" onClick={onClose}>Continue exploring</button>
           </div>
         ) : (
           <>
             <p className="eyebrow">Private consultation</p>
-            <h2 id="appointment-title">Book your Miraya experience</h2>
+            <h2 id="appointment-title">Book your Mirayaa experience</h2>
             <p className="modal__intro">Tell us what you are looking for and we’ll curate a viewing around you.</p>
             <form className="appointment-form" onSubmit={submit}>
               <label><span>Full name</span><input name="name" autoFocus required placeholder="Your name" /></label>
@@ -221,7 +221,7 @@ export default function HomePage() {
         {menuOpen && <div className="mobile-menu"><a href="#collections" onClick={() => setMenuOpen(false)}>Collections</a><a href="#categories" onClick={() => setMenuOpen(false)}>Jewellery</a><a href="#story" onClick={() => setMenuOpen(false)}>Our story</a><a href="#featured" onClick={() => setMenuOpen(false)}>Featured pieces</a><button className="button button--gold" onClick={openBooking}>Book an appointment</button></div>}
       </header>
 
-      <section className="hero" aria-roledescription="carousel" aria-label="Miraya featured collections" onMouseEnter={() => setHeroPaused(true)} onMouseLeave={() => setHeroPaused(false)}>
+      <section className="hero" aria-roledescription="carousel" aria-label="Mirayaa featured collections" onMouseEnter={() => setHeroPaused(true)} onMouseLeave={() => setHeroPaused(false)}>
         <div className="hero__glow" aria-hidden="true" />
         <div className="hero__main">
           <div className="hero__copy" key={`copy-${heroIndex}`}>
@@ -260,7 +260,7 @@ export default function HomePage() {
         <a className="scroll-cue" href="#collections"><span>Scroll to discover</span><i/></a>
       </section>
 
-      <div className="marquee" aria-label="Miraya collection highlights"><div>{[...collectionFamilies, ...collectionFamilies].map((item, i) => <span key={`${item}-${i}`}>{item}<b>✦</b></span>)}</div></div>
+      <div className="marquee" aria-label="Mirayaa collection highlights"><div>{[...collectionFamilies, ...collectionFamilies].map((item, i) => <span key={`${item}-${i}`}>{item}<b>✦</b></span>)}</div></div>
 
       <section className="collections section" id="collections">
         <header className="section-heading"><p className="eyebrow">Our collections</p><h2>Eight expressions of <em>beauty</em></h2><p>From the warmth of traditional gold to contemporary diamond brilliance.</p></header>
@@ -281,8 +281,8 @@ export default function HomePage() {
 
       <section className="story" id="story">
         <div className="story__image"><Image src="/jewellery/necklace.jpg" alt="Colourful peacock-inspired jewellery set" fill sizes="(max-width: 800px) 100vw, 50vw"/><div className="story__seal"><Brand compact light/><span>Crafted to<br/>be cherished</span></div></div>
-        <div className="story__copy"><p className="eyebrow">The Miraya symbol</p><h2>Born from meaning.<br/><em>Made to endure.</em></h2><p>Our mark unites the <strong>M of Miraya</strong>, a teardrop for eternal elegance, and the brilliance of a diamond. It is our promise to create pieces with soul—jewellery that feels distinctly yours today and becomes part of your story tomorrow.</p>
-          <div className="symbol-equation"><div><b>M</b><small>Miraya</small></div><i>+</i><div><b className="drop">◊</b><small>Eternal elegance</small></div><i>+</i><div><b>◇</b><small>Diamond brilliance</small></div><i>=</i><div><Brand compact/><small>Miraya symbol</small></div></div>
+        <div className="story__copy"><p className="eyebrow">The Mirayaa symbol</p><h2>Born from meaning.<br/><em>Made to endure.</em></h2><p>Our mark unites the <strong>M of Mirayaa</strong>, a teardrop for eternal elegance, and the brilliance of a diamond. It is our promise to create pieces with soul—jewellery that feels distinctly yours today and becomes part of your story tomorrow.</p>
+          <div className="symbol-equation"><div><b>M</b><small>Mirayaa</small></div><i>+</i><div><b className="drop">◊</b><small>Eternal elegance</small></div><i>+</i><div><b>◇</b><small>Diamond brilliance</small></div><i>=</i><div><Brand compact/><small>Mirayaa symbol</small></div></div>
           <a className="text-link story__link" href="#promise">Discover our story <Icon name="arrow" size={17}/></a>
         </div>
       </section>
@@ -301,7 +301,7 @@ export default function HomePage() {
 
       <section className="bridal">
         <div className="bridal__copy"><p className="eyebrow">The bridal edit</p><h2>For every<br/><em>forever.</em></h2><p>From your first consultation to the final fitting, we bring your vision to life through heirloom-worthy craft.</p><button className="button button--gold" onClick={openBooking}>Meet your jewellery advisor <Icon name="arrow" size={17}/></button></div>
-        <div className="bridal__image"><Image src="/jewellery/bridal.jpg" alt="Diamond bangles from the Miraya bridal edit" fill sizes="(max-width: 800px) 100vw, 55vw"/><div className="bridal__note"><span>Personal curation</span><span>Bespoke design</span><span>Private fitting</span></div></div>
+        <div className="bridal__image"><Image src="/jewellery/bridal.jpg" alt="Diamond bangles from the Mirayaa bridal edit" fill sizes="(max-width: 800px) 100vw, 55vw"/><div className="bridal__note"><span>Personal curation</span><span>Bespoke design</span><span>Private fitting</span></div></div>
       </section>
 
       <section className="promise" id="promise">
@@ -309,12 +309,12 @@ export default function HomePage() {
       </section>
 
       <section className="appointment section">
-        <div className="appointment__monogram"><Brand compact light/><span>Miraya<br/>private viewing</span></div>
+        <div className="appointment__monogram"><Brand compact light/><span>Mirayaa<br/>private viewing</span></div>
         <div className="appointment__copy"><p className="eyebrow">A moment, just for you</p><h2>Experience the jewellery<br/><em>beyond the screen.</em></h2><p>Join us in store or meet by video. Your dedicated advisor will prepare a selection around your style and occasion.</p><button className="button button--gold" onClick={openBooking}>Book an appointment <Icon name="calendar" size={17}/></button></div>
       </section>
 
       <section className="journal section">
-        <header className="section-heading section-heading--split"><div><p className="eyebrow">The Miraya journal</p><h2>Stories of <em>craft</em></h2></div><a className="text-link" href="#top">Explore the journal <Icon name="arrow" size={17}/></a></header>
+        <header className="section-heading section-heading--split"><div><p className="eyebrow">The Mirayaa journal</p><h2>Stories of <em>craft</em></h2></div><a className="text-link" href="#top">Explore the journal <Icon name="arrow" size={17}/></a></header>
         <div className="journal__grid"><article><div><Image src="/jewellery/earrings.jpg" alt="Diamond jewellery details" fill sizes="50vw"/></div><p className="eyebrow">Jewellery guide</p><h3>How to choose jewellery that feels like you</h3></article><article><div><Image src="/jewellery/bangles.jpg" alt="Emerald and diamond jewellery detail" fill sizes="50vw"/></div><p className="eyebrow">Care &amp; keeping</p><h3>A lifetime of brilliance: caring for your pieces</h3></article></div>
       </section>
 
@@ -322,8 +322,8 @@ export default function HomePage() {
         <div className="footer__brand"><Brand light/><p>Fine jewellery for life’s most meaningful moments.</p><button className="text-link text-link--light" onClick={openBooking}>Book a private viewing <Icon name="arrow" size={17}/></button></div>
         <div><h4>Collections</h4>{collectionFamilies.slice(0,6).map(x => <a href="#collections" key={x}>{x}</a>)}</div>
         <div><h4>Categories</h4>{categories.slice(0,6).map(x => <a href="#categories" key={x.name}>{x.name}</a>)}</div>
-        <div><h4>Visit Miraya</h4><p>Private consultations available in store and by video.</p><button onClick={openBooking}>Request an appointment</button><span className="social"><Icon name="instagram"/> Instagram</span></div>
-        <div className="footer__bottom"><span>© 2026 Miraya Gold &amp; Diamond</span><span>Privacy · Terms · Accessibility</span></div>
+        <div><h4>Visit Mirayaa</h4><p>Private consultations available in store and by video.</p><button onClick={openBooking}>Request an appointment</button><span className="social"><Icon name="instagram"/> Instagram</span></div>
+        <div className="footer__bottom"><span>© 2026 Mirayaa Gold &amp; Diamond</span><span>Privacy · Terms · Accessibility</span></div>
       </footer>
     </main>
   );

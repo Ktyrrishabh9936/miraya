@@ -1,6 +1,6 @@
-# Miraya Gold & Diamond
+# Mirayaa Gold & Diamond
 
-A responsive Next.js homepage for Miraya, built from the supplied brand identity, homepage direction, and product photography.
+A responsive Next.js homepage for Mirayaa, built from the supplied brand identity, homepage direction, and product photography.
 
 ## Run locally
 
@@ -19,5 +19,5 @@ Then open `http://localhost:3000`.
 - Filterable featured products and favourites
 - Accessible mobile navigation
 - Functional private-appointment form with confirmation state
-- Supplied Miraya product photography and reconstructed brand mark
+- Supplied Mirayaa product photography and official client logo
 - Reduced-motion support
